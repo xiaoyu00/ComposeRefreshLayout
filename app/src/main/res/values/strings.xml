@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ComposeDemo</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_refresh">RefreshActivity</string>
+    <string name="title_activity_lottie_header">LottieHeaderActivity</string>
+    <string name="title_activity_default_header">DefaultHeaderActivity</string>
+    <string name="title_activity_refresh_and_load_more">RefreshAndLoadMoreActivity</string>
+</resources>
