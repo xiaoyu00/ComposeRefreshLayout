@@ -1,6 +1,7 @@
 # ComposeRefreshLayout
 这是一个简单易用的下拉刷新库，参考[官方Demo](https://github.com/android/compose-samples "官方Demo")进行封装。代码简单易用，可自定义刷新头与上拉加载View。
 ## 效果展示
+![baidu](https://github.com/xiaoyu00/ComposeRefreshLayout/blob/master/%E5%9B%BE%E7%89%87/xg.gif "效果")
 ## 使用
 ### 引入
 ```
