@@ -7,11 +7,9 @@
 ## 使用
 ### 引入
 ```
-  allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+ repositories {
+	...
+	maven { url 'https://jitpack.io' }
  }
  ```
 ```
