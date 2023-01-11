@@ -3,7 +3,7 @@
 ## 效果展示
 ![baidu](https://github.com/xiaoyu00/ComposeRefreshLayout/blob/master/%E5%9B%BE%E7%89%87/xg.gif "效果")
 ## 说明
-因刷新头与上拉加载View全部为自定义，所以本库里不包含默认刷新头与加载View，效果中的刷新头与加载View代码在app目录下的simple里
+因刷新头与上拉加载View全部为自定义,比较灵活，所以本库里不包含默认刷新头与加载View，效果中的刷新头与加载View代码在app目录下的simple里
 ## 使用
 ### 引入
 ```
@@ -31,7 +31,8 @@ RefreshLayout(refreshingState = refreshing, onRefresh = {
             }
         }, refreshHeader = { offset, state ->
            // RefreshDefaultHeader(state, offset)
-           // 你的刷新Header
+	   // RefreshLottieHeader(state)
+           // 你的刷新Header(上面刷新头代码在app下simple里)
         }) {
             // 刷新内容
             LazyColumn(
@@ -66,7 +67,8 @@ LoadMoreLayout(loadMoreState = isLoadMore, onLoadMore = {
             isLoadMore = false
         }
     }, loadMore = { offset, state ->
-        LoadMoreDefaultView(state, isNoMore)
+        // LoadMoreDefaultView(state, isNoMore)(此代码在app下simple里)
+	// 你的加载View
     }) {
         RefreshLayout(refreshingState = refreshing, onRefresh = {
             refreshing = true
@@ -75,7 +77,8 @@ LoadMoreLayout(loadMoreState = isLoadMore, onLoadMore = {
                 refreshing = false
             }
         }, refreshHeader = { offset, state ->
-            RefreshDefaultHeader(state, offset)
+            //RefreshDefaultHeader(state, offset) (此刷新头代码在app下simple里)
+	    // 你的刷新Header
         }) {
             LazyColumn(
                 modifier = Modifier
